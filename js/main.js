@@ -24,7 +24,7 @@ var loggedAccount = {};
 if (loggedout) {
   window.addEventListener("load", () => {
     if (window.location.href.includes("home.html")) {
-      window.location.href = "../index.html";
+      window.location.href = "../";
     }
   });
 }
