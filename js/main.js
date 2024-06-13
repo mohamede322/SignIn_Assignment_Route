@@ -61,7 +61,7 @@ function signIn(e) {
       ) {
         alertBox.classList.add("d-none");
         localStorage.setItem("loggedAccount", JSON.stringify(accountsList[i]));
-        window.location.href = "../pages/home.html";
+        window.location.href += "/pages/home.html";
         localStorage.setItem("loggedOut", "0");
       } else if (
         accountsList[i].email === email ||
