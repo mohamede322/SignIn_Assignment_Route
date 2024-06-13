@@ -54,9 +54,8 @@ function signIn(e) {
 
   if (email != "" && password != "") {
     for (var i = 0; i < accountsList.length; i++) {
-      accountsList[i];
       if (
-        accountsList[i].email === email &&
+        accountsList[i].email.toUpperCase() === email.toUpperCase() &&
         accountsList[i].password === password
       ) {
         alertBox.classList.add("d-none");
@@ -64,7 +63,7 @@ function signIn(e) {
         window.location.href += "pages/home.html";
         localStorage.setItem("loggedOut", "0");
       } else if (
-        accountsList[i].email === email ||
+        accountsList[i].email.toUpperCase() === email.toUpperCase() ||
         accountsList[i].password === password
       ) {
         alertBox.classList.remove("d-none");
@@ -89,7 +88,11 @@ function signUp(e) {
   e.preventDefault();
   var firstTime = true;
   for (var i = 0; i < accountsList.length; i++) {
-    if (accountsList[i].email.includes(emailInput.value)) {
+    if (
+      accountsList[i].email
+        .toUpperCase()
+        .includes(emailInput.value.toUpperCase())
+    ) {
       firstTime = false;
     } else {
       firstTime = true;
@@ -111,7 +114,7 @@ function signUp(e) {
       accountsList.push(account);
       localStorage.setItem("accountsList", JSON.stringify(accountsList));
       successMsg();
-      window.location.href = "../pages/home.html";
+      window.location.href = "../";
     } else {
       errorMsg("account already exists");
     }
