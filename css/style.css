@@ -1,0 +1,28 @@
+:root {
+  --main-color-light: #0dcaf0;
+  --main-color-dark: #24353f;
+}
+.main-color-light {
+  color: var(--main-color-light);
+}
+body {
+  background-color: var(--main-color-dark);
+}
+.submit-btn {
+  --bs-btn-hover-color: #fff;
+  --bs-btn-color: var(--main-color-light);
+  --bs-btn-bg: transparent;
+}
+.box {
+  background-color: var(--main-color-dark);
+  box-shadow: 1px 1px 15px 10px rgba(0, 0, 0, 0.3);
+  & h1 {
+    color: var(--main-color-light);
+  }
+}
+
+.btn-outline-warning {
+  --bs-btn-color: #ddd;
+  --bs-btn-bg: transparent;
+  --bs-btn-hover-color: #ddd;
+}

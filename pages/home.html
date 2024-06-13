@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- CSS Links -->
+    <title>Home</title>
+  </head>
+  <body>
+    <main class="home-main">
+      <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow">
+          <div class="container w-75">
+            <a class="navbar-brand text-light" href="#">SMART LOGIN</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <button
+                class="btn btn-outline-warning ms-auto"
+                type="submit"
+                id="logoutBtn"
+              >
+                Logout
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section class="d-flex justify-content-center align-items-center vh-100">
+        <div class="shadow text-center p-5 w-50">
+          <h2 class="main-color-light">
+            Welcome <span class="userName"></span>
+          </h2>
+        </div>
+      </section>
+    </main>
+
+    <!-- JS File -->
+    <script src="../js/main.js"></script>
+    <!-- JS File -->
+    <!-- Bootstrap Script -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Script -->
+  </body>
+</html>
